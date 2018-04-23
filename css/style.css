@@ -142,7 +142,7 @@ p {
 #hero {
     height: 90vh;
     display: flex;
-    background-image: url(../img/koushik-chowdavarapu-137783-unsplash.jpg);
+    background-image: url('../img/koushik-chowdavarapu-137783-unsplash.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
