@@ -17,32 +17,39 @@ body {
     color: var(--odyssey_black);
 }
 
-.container {
+.container,
+.container-full {
     box-sizing: border-box;
     width: 100vw;
     padding-top: 40px;
     padding-bottom: 40px;
+}
+
+.container {
     padding-left: 20px;
     padding-right: 20px;
 }
 
-.container-full {
-    height: 250px;
-    width: 100vw;
-    margin-top: -120px;
-    z-index: -10px;
-}
-
 @media only screen and (min-width: 768px) {
-    .container {
-        padding: 60px;
+    .container,
+    .container-full {
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
+    .container {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
 }
 
 @media only screen and (min-width: 1024px) {
-    .container {
+    .container,
+    .container-full {
         padding-top: 150px;
         padding-bottom: 150px;
+    }
+    .container {
         padding-left: 160px;
         padding-right: 160px;
     }
@@ -65,6 +72,7 @@ h2 {
 h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
+    color: var(--odyssey_blue_light);
 }
 
 h4 {
@@ -116,7 +124,6 @@ p {
  * 
  */
 
-
 /*
 #nav {
     background-color: red;
@@ -158,7 +165,6 @@ p {
     background-color: violet;
 }
 */
-
 
 /*
  * Navigation
@@ -310,6 +316,28 @@ p {
 
 
 /*
+ * Wave elements
+ * 
+ */
+
+#waves {
+    height: 100px;
+    /*    margin-top: -120px;*/
+    z-index: -10px;
+}
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 1024px) {
+    #waves {
+        height: 250px;
+        margin-top: -120px;
+        z-index: -10px;
+    }
+}
+
+
+/*
  * Hero stories
  * 
  */
@@ -344,6 +372,9 @@ p {
     .story_image {
         height: 200px;
     }
+    .story {
+        grid-column: span 1;
+    }
 }
 
 
@@ -352,7 +383,31 @@ p {
  * 
  */
 
-#cta {}
+#cta.container {
+    padding-bottom: 0;
+}
+
+#cta-phonenum {
+    padding-top: 0;
+}
+
+#cta-phonenum-image {
+    height: 400px;
+    width: 90vw;
+    float: right;
+    background-image: url("../img/touch.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#cta-phonenum-image p {
+    font-family: "kepler-std-semicondensed-dis", serif;
+    font-size: 72px;
+    -webkit-margin-before: 0.25em;
+    -webkit-margin-after: 0.25em;
+    padding-left: 20px;
+    color: var(--odyssey_grey);
+}
 
 
 /*
