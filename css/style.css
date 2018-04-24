@@ -1,3 +1,8 @@
+/*
+ * General visual rules
+ * 
+ */
+
 body {
     --odyssey_yellow: #eed777;
     --odyssey_orange: #fba670;
@@ -29,6 +34,12 @@ body {
         padding: 60px 180px;
     }
 }
+
+
+/*
+ * General typographic rules
+ * 
+ */
 
 h2 {
     font-family: "kepler-std-semicondensed-dis", serif;
@@ -65,6 +76,12 @@ p {
     }
 }
 
+
+/*
+ * General graphic element rules
+ * 
+ */
+
 .button {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
@@ -81,7 +98,10 @@ p {
 }
 
 
-/* COLOR CODING */
+/*
+ * COLOR CODING
+ * 
+ */
 
 
 /*
@@ -127,7 +147,10 @@ p {
 */
 
 
-/* END COLOR CODING */
+/*
+ * Navigation
+ * 
+ */
 
 #nav {
     position: absolute;
@@ -138,6 +161,12 @@ p {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
+
+
+/*
+ * Hero section
+ * 
+ */
 
 #hero {
     height: 90vh;
@@ -207,7 +236,19 @@ p {
     opacity: 1;
 }
 
+
+/*
+ * Our philosophy
+ * 
+ */
+
 #philosophy {}
+
+
+/*
+ * Odyssey formula
+ * 
+ */
 
 #formula {}
 
@@ -234,7 +275,19 @@ p {
     }
 }
 
+
+/*
+ * Funeral services
+ * 
+ */
+
 #services {}
+
+
+/*
+ * Hero stories
+ * 
+ */
 
 #stories {
     display: grid;
@@ -252,7 +305,19 @@ p {
     background-color: black;
 }
 
+
+/*
+ * Call-to-action (call us)
+ * 
+ */
+
 #cta {}
+
+
+/*
+ * Booklet
+ * 
+ */
 
 #booklet {
     display: grid;
@@ -272,6 +337,22 @@ p {
     background-color: black;
 }
 
+
+/*
+ * Locations
+ * 
+ */
+
 #locations {}
+
+#locations img {
+    max-width: 100%;
+}
+
+
+/*
+ * Footer
+ * 
+ */
 
 #footer {}
