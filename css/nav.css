@@ -5,7 +5,7 @@
     /*    max-height: 70px;*/
     z-index: 100;
     width: 100%;
-    padding-top: 17px;
+    padding-top: 24px;
     background: linear-gradient(rgba(255, 255, 255, 1.0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.0));
     /*    overflow: hidden;*/
     -webkit-transition: all 0.5s;
@@ -13,11 +13,55 @@
     opacity: 0;
     top: -100px;
     padding-bottom: 6px;
-    height: 140px;
+    /*    height: 140px;*/
 }
+
+.row {
+    width: 100%;
+    /*    max-width: 940px;*/
+    margin: 0 auto;
+    position: relative;
+    padding: 0 5%;
+    box-sizing: border-box;
+}
+
+/* Medium screens */
+
+@media only screen and (min-width: 768px) {
+    .row {
+        padding: 0 30px;
+    }
+    nav:before,
+    nav:after {
+        content: '';
+        display: table;
+    }
+    nav:after {
+        clear: both;
+    }
+}
+
+/* iPad Pro screens */
+
+@media only screen and (min-width: 1024px) {
+    .row {
+        padding: 0 40px;
+    }
+}
+
+
+/* Large screens */
+
+@media only screen and (min-width: 1440px) {}
+
+
+/* XL screens */
+
+@media only screen and (min-width: 2560px) {}
 
 .open-nav {
     max-height: 400px !important;
+    min-height: 140px;
 }
 
 .open-nav .mobile-toggle {
@@ -56,7 +100,7 @@ nav {
 
 nav ul {
     list-style: none;
-    overflow: hidden;
+    /*    overflow: hidden;*/
     text-align: right;
     float: right;
 }
@@ -68,7 +112,7 @@ nav li {
 }
 
 nav a {
-    color: var(--odyssey_black);
+    color: grey;
     /*    text-transform: uppercase;*/
     text-decoration: none;
     transition: 0.5s;
@@ -80,10 +124,6 @@ nav a {
 }
 
 nav a:hover {
-    /*
-    text-decoration: underline;
-    line-height: 2;
-*/
     border-bottom: 1px var(--odyssey_blue_light) solid;
     color: var(--odyssey_blue_light);
 }
@@ -95,6 +135,21 @@ nav a:after {
     height: 15px;
     /*    bottom: 0;*/
     /*    left: 25%;*/
+}
+
+nav li.cta_button a {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border: 2px grey solid;
+    transition: 0.75s;
+}
+
+nav li.cta_button a:hover {
+    background-color: lightgray;
+    /*    color: white;*/
+    /*    border: 2px white solid;*/
+    color: grey;
 }
 
 /*
@@ -144,90 +199,31 @@ nav li:nth-child(5) a:hover {
 /**/
 
 @media only screen and (max-width: 768px) {
-
     .navigation {
         max-height: 70px;
         overflow: hidden;
     }
-
     .navigation {
         /*        margin-top: 0.25em;*/
         padding-top: 25px;
     }
-
     .logo {
         float: none;
     }
-
     nav {
         width: 100%;
     }
-
     nav ul {
         padding-top: 10px;
         margin-bottom: 22px;
-        float: left;
+        /*        float: left;*/
         text-align: center;
         width: 100%;
     }
-
     nav li {
         width: 100%;
         padding: 7px 0;
         margin: 0;
-    }
-}
-
-/**/
-
-.row {
-    width: 100%;
-    /*    max-width: 940px;*/
-    margin: 0 auto;
-    position: relative;
-    padding: 0 5%;
-    box-sizing: border-box;
-}
-
-/* Medium screens */
-
-@media only screen and (min-width: 768px) {
-    .row {
-        padding: 0 50px;
-    }
-    nav:before,
-    nav:after {
-        content: '';
-        display: table;
-    }
-    nav:after {
-        clear: both;
-    }
-}
-
-/* iPad Pro screens */
-
-@media only screen and (min-width: 1024px) {
-    .row {
-        padding: 0 60px;
-    }
-}
-
-
-/* Large screens */
-
-@media only screen and (min-width: 1440px) {
-    .row {
-        padding: 0 130px;
-    }
-}
-
-
-/* XL screens */
-
-@media only screen and (min-width: 2560px) {
-    .row {
-        padding: 0 210px;
     }
 }
 
