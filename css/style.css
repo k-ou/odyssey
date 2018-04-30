@@ -105,16 +105,20 @@ p {
 .button {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    padding: 20px;
-    border: 2px var(--odyssey_grey) solid;
-    color: var(--odyssey_grey);
-    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: white;
+    /*    border: 2px white solid;*/
+    background-color: var(--odyssey_blue_light);
     transition: 0.75s;
+    text-align: center;
 }
 
 .button:hover {
+    /*    border: 2px white solid;*/
     background-color: var(--odyssey_grey);
-    color: white;
 }
 
 
@@ -359,10 +363,21 @@ p {
     background-color: #e8e8e8;
     border: 30px white solid;
     box-sizing: border-box;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 #intake h2 {
     color: var(--odyssey_black);
+    margin-top: 0px;
+    font-size: 32px;
+}
+
+#intake .button {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 40px;
 }
 
 /*
@@ -479,4 +494,11 @@ p {
  * 
  */
 
-#footer {}
+#footer {
+    border-top: 1px grey solid;
+}
+
+#footer span.location_name {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400;
+}
