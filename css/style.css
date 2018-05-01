@@ -62,10 +62,11 @@ body {
  */
 
 h2 {
-    font-family: "Open Sans", sans-serif;
-    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
     color: var(--odyssey_grey);
     text-align: center;
+    letter-spacing: 0.03em;
 }
 
 h3 {
@@ -119,6 +120,7 @@ p {
 .button:hover {
     /*    border: 2px white solid;*/
     background-color: var(--odyssey_grey);
+    background-color: var(--odyssey_blue_dark);
 }
 
 
@@ -193,6 +195,7 @@ p {
 #hero {
     height: 70vh;
     display: flex;
+
     background-image: url('../img/koushik-chowdavarapu-137783-unsplash.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -399,11 +402,12 @@ p {
         grid-template-rows: repeat(3, auto);
         grid-gap: 50px;
     }
-    #stories h2 {
+    #stories h2,
+    #stories h3 {
         grid-column: 1 / 4;
     }
     .story {
-        grid-column: 2 / 4;
+        grid-row: 4 / 5;
     }
 }
 
@@ -435,8 +439,8 @@ p {
 }
 
 #cta-phonenum-image {
-    height: 400px;
-    width: 90vw;
+    height: 500px;
+    width: 70vw;
     float: right;
     background-image: url("../img/touch.jpg");
     background-size: cover;
