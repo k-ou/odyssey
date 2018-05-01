@@ -137,19 +137,21 @@ nav a:after {
     /*    left: 25%;*/
 }
 
-nav li.cta_button a {
+nav li.button a {
     height: 100%;
     width: 100%;
     padding: 10px;
-    border: 2px grey solid;
+    /*    border: 2px grey solid;*/
     transition: 0.75s;
+    color: white;
 }
 
-nav li.cta_button a:hover {
-    background-color: lightgray;
+nav li.button a:hover {
+    /*    background-color: lightgray;*/
     /*    color: white;*/
     /*    border: 2px white solid;*/
-    color: grey;
+    /*    color: grey;*/
+    border-bottom: none;
 }
 
 /*
