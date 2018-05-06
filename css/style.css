@@ -81,7 +81,7 @@ body {
 
 h2 {
     font-family: "kepler-std-semicondensed-dis", serif;
-    font-size: 36px;
+    font-size: 48px;
     color: var(--odyssey_grey);
     /*    text-align: center;*/
     letter-spacing: 0.03em;
@@ -90,8 +90,8 @@ h2 {
 
 h3 {
     font-family: 'Roboto', sans-serif;
-    font-size: 26px;
-    line-height: 36px;
+    font-size: 20px;
+    line-height: 24px;
     font-weight: 200;
     color: var(--odyssey_orange);
 }
@@ -109,11 +109,16 @@ p {
 }
 
 a {
-    color: grey;
     transition: 0.75s;
 }
 
-a:hover {
+.text_link {
+    color: var(--odyssey_black);
+    border-bottom: 2px var(--odyssey_grey) dotted;
+    padding-bottom: 4px;
+}
+
+.text_link:hover {
     color: var(--odyssey_blue_light);
 }
 
@@ -131,6 +136,10 @@ img {
     h2 {
         font-size: 96px;
     }
+    h3 {
+        font-size: 26px;
+        line-height: 36px;
+    }
 }
 
 
@@ -139,16 +148,62 @@ img {
  * 
  */
 
-.button {
+.button,
+.button a {
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     padding-bottom: 10px;
     padding-top: 10px;
-    color: white;
-    /*    border: 2px white solid;*/
-    background-color: var(--odyssey_blue_light);
     transition: 0.75s;
     text-align: center;
+}
+
+.button-primary {
+    background-color: transparent;
+    border: 2px solid var(--odyssey_black);
+}
+
+.button-primary a {
+    color: var(--odyssey_black);
+}
+
+.button-primary:hover {
+    color: white;
+    background-color: var(--odyssey_black);
+}
+
+.button-primary a:hover {
+    color: white;
+}
+
+.button-primary-light {
+    color: white;
+    border: 2px solid white;
+}
+
+.button-primary-light:hover {
+    color: var(--odyssey_black);
+    background-color: white;
+}
+
+.button-secondary {
+    color: var(--odyssey_blue_light);
+    border: 2px solid var(--odyssey_blue_light);
+}
+
+.button-secondary:hover {
+    color: white;
+    background-color: var(--odyssey_blue_light);
+}
+
+.button-secondary-light {
+    color: var(--odyssey_blue_light);
+    border: 2px solid var(--odyssey_blue_light);
+}
+
+.button-secondary-light:hover {
+    color: var(--odyssey_black);
+    background-color: var(--odyssey_blue_light);
 }
 
 @media only screen and (min-width: 1024px) {
@@ -158,16 +213,9 @@ img {
     }
 }
 
-.button:hover {
-    /*    border: 2px white solid;*/
-    background-color: var(--odyssey_grey);
-    background-color: var(--odyssey_blue_dark);
-}
-
 .read_more {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    border-bottom: 2px grey dotted;
     align-self: flex-end;
 }
 
@@ -332,6 +380,44 @@ img {
     grid-column: 1 / 3;
 }
 
+#image_section_afterphilosophy p {
+    position: absolute;
+    font-family: "kepler-std-semicondensed-dis", serif;
+    font-size: 10vw;
+    line-height: normal;
+    width: 90%;
+    left: 15px;
+    -webkit-margin-before: 0.25em;
+    -webkit-margin-after: 0.25em;
+}
+
+#image_section_afterphilosophy span {
+    border-bottom: 3px var(--odyssey_black) solid;
+}
+
+@media only screen and (min-width: 768px) {
+    #image_section_afterphilosophy p {
+        font-size: 10vw;
+        width: 65vw;
+        left: 110px;
+        -webkit-margin-before: 0.1em;
+        -webkit-margin-after: 0.1em;
+    }
+    #image_section_afterphilosophy span {
+        border-bottom: 8px var(--odyssey_black) solid;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #image_section_afterphilosophy p {
+        font-size: 8vw;
+        width: 65vw;
+        left: 120px;
+        -webkit-margin-before: 0.75em;
+        -webkit-margin-after: 0.75em;
+    }
+}
+
 
 /*
  * Odyssey formula
@@ -494,7 +580,7 @@ img {
  */
 
 #intake {
-    border: 30px white solid;
+    /*    border: 30px white solid;*/
     box-sizing: border-box;
     text-align: center;
     padding-top: 100px;
@@ -508,7 +594,7 @@ img {
     background-position: top;
     background-attachment: fixed;
     background-size: cover;
-    height: 600px;
+    height: 700px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -516,14 +602,14 @@ img {
 }
 
 #intake_content {
-    background-color: rgba(205, 204, 202, 0.6);
-    height: 500px;
-    width: 500px;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 600px;
+    width: 600px;
     border-radius: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 80px;
+    padding: 100px;
     box-sizing: border-box;
     /*    */
     /*
@@ -535,16 +621,21 @@ img {
     transition: 0.75s;
 }
 
+#intake h2,
+#intake p {
+    color: white;
+}
+
 #intake h2 {
-    color: var(--odyssey_black);
     margin-top: 0px;
     margin-bottom: 10px;
-    font-size: 32px;
+    font-size: 48px;
 }
 
 #intake .button {
     width: 60%;
     margin: 0 auto;
+    margin-top: 60px;
 }
 
 /*
@@ -617,6 +708,11 @@ img {
     padding-bottom: 0;
 }
 
+#cta h3 {
+    position: relative;
+    top: -30px;
+}
+
 #cta-phonenum {
     padding-top: 0;
 }
@@ -632,7 +728,7 @@ img {
 #cta-phonenum-image p {
     padding-left: 20px;
     font-family: "kepler-std-semicondensed-dis", serif;
-    font-size: 72px;
+    font-size: 14vw;
     -webkit-margin-before: 0.25em;
     -webkit-margin-after: 0.25em;
     color: var(--odyssey_grey);
@@ -641,15 +737,16 @@ img {
 @media only screen and (min-width: 768px) {
     #cta-phonenum-image {
         height: 400px;
-        width: 90vw;
         margin: 0 auto;
     }
 }
 
 @media only screen and (min-width: 1024px) {
     #cta-phonenum-image {
-        height: 500px;
-        width: 70vw;
+        height: 600px;
+    }
+    #cta-phonenum-image p {
+        padding-left: 220px;
     }
 }
 
@@ -751,8 +848,6 @@ img {
         grid-column: span 4;
     }
 }
-
-
 
 /*
  * Footer
