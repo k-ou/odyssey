@@ -126,19 +126,19 @@ nav li {
     line-height: 1.5;
 }
 
-nav a {
+nav li:not(.button) a {
     color: grey;
     /*    text-transform: uppercase;*/
     text-decoration: none;
     transition: 0.5s;
     line-height: 1.5;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 14px;
     /*    font-weight: 200;*/
     letter-spacing: 0.05em;
 }
 
-nav a:hover {
+nav li:not(.button) a:hover {
     border-bottom: 1px var(--odyssey_blue_light) dotted;
     color: var(--odyssey_blue_light);
 }
@@ -158,7 +158,6 @@ nav li.button a {
     padding: 10px;
     /*    border: 2px grey solid;*/
     transition: 0.75s;
-    color: white;
 }
 
 nav li.button a:hover {
