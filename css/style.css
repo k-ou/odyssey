@@ -386,7 +386,7 @@ img {
     font-size: 10vw;
     line-height: normal;
     width: 90%;
-    left: 15px;
+    left: 8vw;
     -webkit-margin-before: 0.25em;
     -webkit-margin-after: 0.25em;
 }
@@ -399,20 +399,20 @@ img {
     #image_section_afterphilosophy p {
         font-size: 10vw;
         width: 65vw;
-        left: 110px;
+        left: 12vw;
         -webkit-margin-before: 0.1em;
         -webkit-margin-after: 0.1em;
     }
     #image_section_afterphilosophy span {
-        border-bottom: 8px var(--odyssey_black) solid;
+        border-bottom: 6px var(--odyssey_black) solid;
     }
 }
 
 @media only screen and (min-width: 1024px) {
     #image_section_afterphilosophy p {
-        font-size: 8vw;
+        font-size: 7.5vw;
         width: 65vw;
-        left: 120px;
+        left: 10vw;
         -webkit-margin-before: 0.75em;
         -webkit-margin-after: 0.75em;
     }
@@ -714,7 +714,7 @@ img {
 }
 
 #cta-phonenum {
-    padding-top: 0;
+    padding-top: 20px;
 }
 
 #cta-phonenum-image {
