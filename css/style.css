@@ -428,67 +428,158 @@ img {
  * 
  */
 
-#formula {}
+#formula {
+    padding-bottom: 0px;
+}
 
 #formula_heading {}
 
 #formula_intro {}
 
-.formula_step {}
+#image_section_formula {
+    display: inline-block;
+    position: relative;
+    padding-top: 50px;
+    z-index: 0;
+}
+
+.formula_img {
+    width: 100%;
+}
+
+#formula_img_1 {
+    padding-top: 80px;
+}
+
+#formula_img_2 {
+    display: none;
+}
+
+.formula_step {
+    position: relative;
+    z-index: 10;
+}
+
+#formula_circle_1 {
+    position: absolute;
+    top: 0px;
+    right: 20vw;
+    height: 800px;
+    width: 800px;
+    border-radius: 100%;
+    background-color: var(--odyssey_yellow);
+    opacity: 0.4;
+    z-index: 2;
+}
 
 @media only screen and (min-width: 768px) {
-    #formula {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 0px 60px;
-    }
-    #formula_heading {
-        grid-column: 1 / 4;
-    }
-    #formula_intro {
-        grid-column: 1 / 3;
+    #image_section_formula {
+        padding-bottom: 400px;
     }
     .formula_step {
-        grid-row-start: 3;
+        width: 250px;
     }
-    .circle_orangering {
+    #formula_step_2 {
         position: absolute;
-        height: 750px;
-        width: 750px;
-        border-radius: 100%;
-        border: 1px var(--odyssey_orange) solid;
-        z-index: -10;
-        left: -40px;
-        margin-top: 70px;
+        top: 170px;
+        right: 10vw;
+    }
+    #formula_step_3 {
+        position: absolute;
+        bottom: 100px;
+        right: 10vw;
+    }
+    .formula_img {
+        width: 47%;
+        display: inline-block;
+        position: relative;
+    }
+    #formula_img_1 {
+        top: 60px;
+        z-index: 1;
+        padding-top: 0;
+    }
+    #formula_img_2 {
+        display: block;
+        z-index: 3;
+        float: right;
+        top: -100px;
+    }
+    #formula_circle_1 {
+        top: 150px;
+        right: 20vw;
+        height: 500px;
+        width: 500px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #image_section_formula {
+        padding-bottom: 500px;
+    }
+    .formula_step {
+        width: 350px;
+    }
+    #formula_step_2 {
+        top: 200px;
+        right: 25vw;
+    }
+    #formula_step_3 {
+        bottom: 200px;
+        right: 20%;
+    }
+    #formula_img_1 {
+        top: 180px;
+        z-index: 1;
+        padding-top: 0;
+    }
+    #formula_img_2 {
+        display: block;
+        z-index: 3;
+        float: right;
+        top: 0px;
+    }
+    #formula_circle_1 {
+        top: 150px;
+        right: 20vw;
+        height: 700px;
+        width: 700px;
     }
 }
 
 /*
- * Image Section
+ * Wave elements
  * 
  */
 
-/*#image_section_afterformula div:nth-child(1) {*/
-
-#afterformula_img1 {
-    padding-top: 200px;
+#waves {
+    display: none;
 }
 
-#afterformula_img2 {
-    z-index: 2;
+@media only screen and (min-width: 768px) {
+    #waves {
+        display: block;
+        height: 0px;
+        /*    margin-top: -120px;*/
+        z-index: -10px;
+        position: relative;
+        padding: 0;
+    }
+
+    #waves .svg {
+        position: absolute;
+        top: -270px;
+        width: 100%;
+    }
 }
 
-#afterformula_circle1 {
-    position: absolute;
-    right: 260px;
-    height: 700px;
-    width: 700px;
-    border-radius: 100%;
-    background-color: var(--odyssey_yellow);
-    opacity: 0.4;
-    z-index: 0;
+@media only screen and (min-width: 1024px) {
+    #waves {
+        /*        height: 250px;*/
+        /*        margin-top: 400px;*/
+        z-index: 10;
+    }
 }
-
 
 /*
  * Funeral services
@@ -553,28 +644,9 @@ img {
     }
 }
 
-@media only screen and (min-width: 1024px) {}
-
-
-/*
- * Wave elements
- * 
- */
-
-#waves {
-    height: 100px;
-    /*    margin-top: -120px;*/
-    z-index: -10px;
-    position: absolute;
-}
-
-@media only screen and (min-width: 768px) {}
-
 @media only screen and (min-width: 1024px) {
-    #waves {
-        height: 250px;
-        margin-top: 400px;
-        z-index: 10;
+    #services {
+        padding-top: 240px;
     }
 }
 
@@ -656,6 +728,10 @@ img {
  * 
  */
 
+#stories {
+    position: relative;
+}
+
 #stories h2 {
     /*
     -webkit-margin-before: 0.25em;
@@ -696,6 +772,17 @@ img {
     margin-bottom: 50px;
 }
 
+.circle_orangering {
+    position: absolute;
+    height: 1500px;
+    width: 1500px;
+    border-radius: 100%;
+    border: 1px var(--odyssey_orange) solid;
+    z-index: -10;
+    left: -1200px;
+    top: -150px;
+}
+
 @media only screen and (min-width: 768px) {
     #stories {
         display: grid;
@@ -720,17 +807,23 @@ img {
         -webkit-margin-before: 0.25em;
         -webkit-margin-after: 0.25em;
     }
+    .circle_orangering {
+        height: 900px;
+        width: 900px;
+        left: -320px;
+        margin-top: 30px;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
     #stories {
-        grid-template-columns: repeat(9, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(4, auto);
         grid-row-gap: 50px;
         grid-column-gap: 20px;
     }
     #stories h2 {
-        grid-column: 1 / 9;
+        grid-column: 1 / 6;
     }
     .story_image {
         width: 300px;
@@ -740,19 +833,25 @@ img {
         grid-column: 1 / span 2;
     }
     #story_1 {
-        grid-column: 4 / span 4;
-    }
-    #story_2_image {
         grid-column: 3 / span 2;
     }
-    #story_2 {
-        grid-column: 6 / span 4;
-    }
-    #story_3_image {
+    #story_2_image {
         grid-column: 2 / span 2;
     }
+    #story_2 {
+        grid-column: 4 / span 2;
+    }
+    #story_3_image {
+        grid-column: 1 / span 2;
+    }
     #story_3 {
-        grid-column: 5 / span 4;
+        grid-column: 3 / span 2;
+    }
+    .circle_orangering {
+        height: 1150px;
+        width: 1150px;
+        left: -190px;
+        margin-top: 120px;
     }
 }
 
