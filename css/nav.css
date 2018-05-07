@@ -16,7 +16,7 @@
     padding-bottom: 6px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
     .navigation {
         max-height: 100%;
         padding-top: 25px;
@@ -184,7 +184,9 @@ nav li.button a:hover {
     border-bottom: none;
 }
 
-@media only screen and (max-width: 768px) {
+/*@media only screen and (max-width: 768px) {*/
+
+@media only screen and (max-width: 1024px) {
     nav ul {
         padding-top: 10px;
         margin-bottom: 22px;
@@ -201,7 +203,9 @@ nav li.button a:hover {
 
 /* Medium screens */
 
-@media only screen and (min-width: 768px) {
+/*@media only screen and (min-width: 768px) {*/
+
+@media only screen and (min-width: 1024px) {
     nav {
         width: 100%;
     }
@@ -281,16 +285,9 @@ a {
 
 /* Small screens */
 
-@media only screen and (max-width: 768px) {}
+/*@media only screen and (max-width: 768px) {*/
 
-/* Medium screens */
-
-@media only screen and (min-width: 768px) {}
-
-
-/* Small screens */
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
     .mobile-toggle {
         display: block;
     }
