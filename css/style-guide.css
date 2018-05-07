@@ -32,13 +32,6 @@
 #secondary-colors div {
     /* Makes the color palette perfect circles */
     border-radius: 100%;
-    /*
-    width: 25%;
-    height: 0;
-    padding-bottom: 25%;
-    display: flex;
-    justify-content: center;
-*/
     position: relative;
     width: 20%;
     display: inline-block;
@@ -48,7 +41,6 @@
 #secondary-colors div:after {
     content: "";
     display: block;
-
     padding-bottom: 100%;
 }
 
