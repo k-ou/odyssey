@@ -186,7 +186,7 @@ nav li.button a:hover {
 
 /*@media only screen and (max-width: 768px) {*/
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1023px) {
     nav ul {
         padding-top: 10px;
         margin-bottom: 22px;
@@ -287,7 +287,7 @@ a {
 
 /*@media only screen and (max-width: 768px) {*/
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1023px) {
     .mobile-toggle {
         display: block;
     }

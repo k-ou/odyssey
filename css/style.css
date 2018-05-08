@@ -61,7 +61,7 @@ body {
     }
 }
 
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 1440px) {
     .container,
     .container-full {
         padding-top: 150px;
@@ -70,6 +70,13 @@ body {
     .container {
         padding-left: 240px;
         padding-right: 240px;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .container {
+        padding-left: 300px;
+        padding-right: 300px;
     }
 }
 
@@ -262,6 +269,7 @@ img {
 @media only screen and (min-width: 768px) {
     #hero {
         height: 60vh;
+        background-position: bottom;
     }
     #hero h2 {
         font-size: 76px;
@@ -281,6 +289,12 @@ img {
 @media only screen and (min-width: 1224px) {
     #hero {
         height: 90vh;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    #hero h2 {
+        font-size: 116px;
     }
 }
 
@@ -349,7 +363,13 @@ img {
 
 @media only screen and (min-width: 768px) {
     .cd-headline {
-        padding-top: 0px;
+        /*        padding-top: 0px;*/
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .cd-headline {
+        padding-left: 6vw;
     }
 }
 
@@ -372,6 +392,7 @@ img {
 @media only screen and (min-width: 1024px) {
     #philosophy div {
         width: 55vw;
+        max-width: 675px;
     }
 }
 
@@ -428,6 +449,12 @@ img {
     }
 }
 
+@media only screen and (min-width: 1880px) {
+    #image_section_afterphilosophy p {
+        -webkit-margin-before: 0.4em;
+    }
+}
+
 
 /*
  * Odyssey formula
@@ -438,7 +465,9 @@ img {
     padding-bottom: 0px;
 }
 
-#formula_heading {}
+#formula_heading {
+    max-width: 650px
+}
 
 #formula_intro {}
 
@@ -528,11 +557,11 @@ img {
     }
     #formula_step_2 {
         top: 200px;
-        right: 25vw;
+        right: 17vw;
     }
     #formula_step_3 {
         bottom: 200px;
-        right: 20%;
+        right: 11%;
     }
     #formula_img_1 {
         top: 180px;
@@ -550,6 +579,36 @@ img {
         right: 20vw;
         height: 700px;
         width: 700px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    #formula_step_2 {
+        right: 25vw;
+    }
+    #formula_step_3 {
+        right: 20%;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .formula_step {
+        width: 400px;
+    }
+    #formula_step_1 {
+        position: relative;
+        left: 3vw;
+    }
+    #formula_step_2 {
+        right: 30vw;
+    }
+    #formula_step_3 {
+        right: 23vw;
+    }
+    #formula_circle_1 {
+        top: 80px;
+        height: 950px;
+        width: 950px;
     }
 }
 
@@ -590,22 +649,8 @@ img {
 .animated {
     stroke-dashoffset: 0;
     transition: stroke-dashoffset 3.0s ease-in;
-    /*    animation-name: opacityReveal;*/
 }
 
-/*
-@keyframes opacityReveal {
-    0% {
-        opacity: 0%;
-    }
-    50% {
-        opacity: 50%;
-    }
-    100% {
-        opacity: 100%;
-    }
-}
-*/
 
 #Layer_1 .animated {
     transition-delay: 0;
@@ -694,6 +739,7 @@ img {
 .services_item h3 {
     font-size: 16px;
     letter-spacing: 0.05em;
+    line-height: 1.5em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -720,7 +766,19 @@ img {
 
 @media only screen and (min-width: 1024px) {
     #services {
+        padding-top: 200px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    #services {
         padding-top: 240px;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    #services {
+        padding-top: 430px;
     }
 }
 
@@ -929,17 +987,21 @@ img {
     }
 }
 
-/*
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1600px) {
     #stories {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, auto);
+        grid-column-gap: 70px;
     }
-    .story {
-        grid-column: span 1;
+    .story_image {
+        display: flex;
+        justify-self: flex-end;
+    }
+    .circle_orangering {
+        height: 1600px;
+        width: 1600px;
+        left: -210px;
+        margin-top: 180px;
     }
 }
-*/
 
 /*
  * Call-to-action (call us)
@@ -957,7 +1019,7 @@ img {
 
 #cta-phonenum {
     padding-top: 20px;
-    padding-bottom: 0px;
+    /*    padding-bottom: 0px;*/
 }
 
 #cta-phonenum-image {
@@ -989,7 +1051,18 @@ img {
         height: 600px;
     }
     #cta-phonenum-image p {
-        padding-left: 220px;
+        padding-left: 10vw;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    #cta-phonenum-image {
+        height: 75vh;
+    }
+    #cta-phonenum-image p {
+        padding-left: 280px;
+        font-family: "kepler-std-semicondensed-dis", serif;
+        font-size: 10vw;
     }
 }
 
@@ -1001,8 +1074,8 @@ img {
 
 #booklet {
     display: grid;
-    background-color: #e8e8e8;
-    border: 30px white solid;
+    /*    background-color: #e8e8e8;*/
+    /*    border: 30px white solid;*/
     box-sizing: border-box;
 }
 
@@ -1047,7 +1120,12 @@ img {
     }
 }
 
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1600px) {
+    #booklet {
+        padding-left: 350px;
+        padding-right: 350px;
+    }
+}
 
 
 /*
@@ -1059,8 +1137,15 @@ img {
     display: grid;
 }
 
+#locations h2 {
+    -webkit-margin-before: 0.25em;
+    -webkit-margin-after: 0.25em;
+}
+
 #locations_state {
     width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 #locations_state #map,
@@ -1076,17 +1161,26 @@ img {
     font-size: 20px;
 }
 
+/*
+#locations_list {
+    padding-left: 10vw;
+}
+*/
+
 @media only screen and (min-width: 768px) {
     #locations {
         display: grid;
         grid-template-columns: repeat(7, 1fr);
-        grid-gap: 20px;
+        grid-row-gap: 10px;
+        grid-column-gap: 50px;
     }
     #locations h2 {
         grid-column: span 7;
     }
     #locations_state {
         grid-column: span 5;
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
     #locations_list {
         grid-column: 6 / 8;
@@ -1111,6 +1205,9 @@ img {
 }
 
 @media only screen and (min-width: 1024px) {
+    #locations {
+        grid-gap: 20px;
+    }
     #locations_state {
         grid-column: span 4;
     }
