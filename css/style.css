@@ -674,6 +674,10 @@ img {
 
 #services_readmore {
     order: 3;
+    display: flex;
+    padding-top: 30px;
+    justify-content: flex-end;
+    padding-right: 20px;
 }
 
 .services_item:nth-child(1) {
@@ -701,6 +705,9 @@ img {
     }
     #services_readmore {
         grid-column: 1 / 4;
+        padding-top: 0px;
+        padding-right: 0px;
+        justify-content: flex-start;
     }
     #services_list {
         display: grid;
