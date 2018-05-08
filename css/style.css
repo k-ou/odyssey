@@ -1064,7 +1064,7 @@ img {
 }
 
 .location_name {
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-weight: 400;
     font-size: 20px;
 }
@@ -1093,6 +1093,7 @@ img {
     #blue-ring circle {
         transform-origin: 50% 50%;
         transition: 0.5s ease;
+        stroke-width: 3px;
     }
     #orange-dot:hover + #orange-ring circle,
     #yellow-dot:hover + #yellow-ring circle,
@@ -1142,13 +1143,13 @@ input:focus {
 }
 
 input {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     background-color: transparent;
 }
 
 #footer_socmed p {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 #footer_socmed input {
