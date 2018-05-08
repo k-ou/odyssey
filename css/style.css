@@ -188,9 +188,17 @@ img {
     border: 2px solid white;
 }
 
+.button-primary-light a {
+    color: white;
+}
+
 .button-primary-light:hover {
     color: var(--odyssey_black);
     background-color: white;
+}
+
+.button-primary-light a:hover {
+    color: var(--odyssey_black);
 }
 
 .button-secondary {
@@ -1101,28 +1109,31 @@ img {
 
 #booklet_image {
     order: 2;
-    /*    temp*/
-    height: 100px;
-    background-color: black;
+    min-height: 260px;
+    background-image: url('../img/bookletcover.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
     #booklet {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: 4fr 1fr 4fr;
     }
     #booklet_heading {
-        grid-column: 1 / 3;
+        grid-column: 1 / 2;
     }
     #booklet_heading h2 {
-        grid-column: 1 / 3;
+        grid-column: 1 / 2;
         margin-top: 0;
         margin-bottom: 0px;
     }
     #booklet_intro {
-        grid-column: 1 / 3;
+        grid-column: 1 / 2;
     }
     #booklet_image {
-        grid-column: 4 / 6;
+        grid-column: 3 / 4;
         grid-row: span 2;
         height: auto;
     }
@@ -1132,6 +1143,15 @@ img {
     #booklet {
         padding-left: 350px;
         padding-right: 350px;
+    }
+    #booklet_image {
+        min-height: 350px;
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    #booklet_image {
+        min-height: 475px;
     }
 }
 
