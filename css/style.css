@@ -159,10 +159,16 @@ img {
 .button a {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    padding-bottom: 10px;
-    padding-top: 10px;
     transition: 0.75s;
     text-align: center;
+}
+
+.button a {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .button-primary {
@@ -175,11 +181,10 @@ img {
 }
 
 .button-primary:hover {
-    color: white;
     background-color: var(--odyssey_black);
 }
 
-.button-primary a:hover {
+.button-primary:hover a {
     color: white;
 }
 
@@ -193,11 +198,10 @@ img {
 }
 
 .button-primary-light:hover {
-    color: var(--odyssey_black);
     background-color: white;
 }
 
-.button-primary-light a:hover {
+.button-primary-light:hover a {
     color: var(--odyssey_black);
 }
 
@@ -222,7 +226,7 @@ img {
 }
 
 @media only screen and (min-width: 1024px) {
-    .button {
+    .button a {
         padding-left: 20px;
         padding-right: 20px;
     }
